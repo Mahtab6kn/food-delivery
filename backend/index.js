@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 require('./db/conn')
+require('dotenv').config();
 const dataRouter = require('./routes/foodData')
 const userRouter = require('./routes/user')
 const orderRouter = require('./routes/order')

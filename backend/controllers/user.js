@@ -31,11 +31,11 @@ const loginData = async (req , res)=>{
                     // res.send({login:success, user:user})
                 }
                 else{
-                    res.send({message:'Password is incorrect'})
+                    res.status(404).send({message:'Password is incorrect'})
                 }
             }
             else{
-                res.send({message:"User not Exist"})
+                res.status(404).send({message:"User not Exist"})
             }
 
          }
